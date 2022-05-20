@@ -1,0 +1,56 @@
+styles.css
+Who has access
+Not shared
+System properties
+Type
+Style Sheet
+Size
+493 bytes
+Storage used
+493 bytes
+Location
+todo
+Owner
+me
+Modified
+4:07 PM by me
+Opened
+4:15 PM by me
+Created
+4:07 PM with ZIP Extractor
+Add a description
+Viewers can download
+body {
+	background: #3399ff;
+	font-family: 'Oswald', 'Futura', sans-serif;
+}
+#wrapper {
+	margin-top: 10% !important;
+}
+#content {
+	background:#ffff99;
+	padding: 25px;
+}
+#content > h2 {
+	font-size: 18px;
+	text-align: center;
+	padding-top: 0;
+}
+.t10 {
+	margin-top: 10px;
+}
+.t20 {
+	margin-top: 20px;
+}
+.todo-completed {
+	text-decoration: line-through;
+	background: rgba(149, 165, 166, .3);
+}
+footer {
+	margin-top: 20px;
+	color: white;
+}
+#add-btn {
+	background-color:green;
+	border-color:green;
+}
