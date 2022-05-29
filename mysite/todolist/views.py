@@ -19,8 +19,10 @@ def addTodoItem (request):
     form = TodoListForm(request.POST)
 
     if form.is_valid():
-        new_todo = Todolist(text=request.POST['text'])
+        new_todo = Todolist(text = request.POST['text'])
         new_todo.save()
+
+    return redirect('index')    
 
 
 def completedTodo(request,todo_id):
@@ -37,7 +39,7 @@ def deleteCompleted(request):
     return redirect ('index')    
 
 
-def deleteAll():
+def deleteAll(request):
     Todolist.objects.all().delete()
 
     return redirect('index')    
